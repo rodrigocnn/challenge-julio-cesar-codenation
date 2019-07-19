@@ -5,8 +5,6 @@ const FormData = require('form-data');
 require('dotenv/config');
 const TOKEN =  process.env.TOKEN
 
-
-
 function getData(){
     axios.get(`https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=${TOKEN}`)
     .then(function(response){
